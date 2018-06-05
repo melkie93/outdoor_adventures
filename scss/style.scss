@@ -1,0 +1,166 @@
+
+.container1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            width: 100%;
+
+            .fishing {
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 1;
+              margin-left: 10px;
+              margin-top:  150px;
+              width: 280px;
+              height: 500px;
+              z-index: 1;
+              perspective: 1000;
+            }
+            .card1 {
+              width:280px;
+              height: 500;
+              transform-style: preserve-3d;
+              transition: all 1.0s linear;
+            }
+            .fishing:hover .card1 {
+              transform: rotateY(180deg);
+              box-shadow: -10px 10px 10px #aaa;
+            }
+            .face {
+              position: absolute;
+              width: 280px;
+              height: 500px;
+              backface-visibility: hidden;
+            }
+            .face.back {
+              display: block;
+              transform: rotateY(180deg);
+              box-sizing: border-box;
+              padding: 10px;
+              color: white;
+              text-align: center;
+              background-color: #aaa;
+            }
+                .camping {
+                display: grid;
+                grid-column-start: 2;
+                grid-column-end: 2;
+                  margin-left: 10px;
+                  margin-top:  150px;
+                  width: 280px;
+                  height: 500px;
+                  z-index: 1;
+                  perspective: 1000;
+                }
+                .card2{
+                  width:280px;
+                  height: 500;
+                  transform-style: preserve-3d;
+                  transition: all 1.0s linear;
+                }
+                .camping:hover .card2 {
+                  transform: rotateY(180deg);
+                box-shadow: -10px 10px 10px #aaa;
+                }
+                .camp_face {
+                  position: absolute;
+                  width: 280px;
+                  height: 500px;
+                  backface-visibility: hidden;
+                }
+                .back_camp_center{
+                  display: block;
+                  transform: rotateY(180deg);
+                  box-sizing: border-box;
+                  height: 500px;
+                  padding: 10px;
+                  color:white;
+                  text-align: center;
+                  background-color: #aaa;
+                }
+                    .hiking {
+                    display: grid;
+                    grid-column-start: 3;
+                    grid-column-end: 3;
+                      margin-left: 10px;
+                      margin-top:  150px;
+                      width: 280px;
+                      height: 500px;
+                      z-index: 1;
+                      perspective: 1000;
+                    }
+                    .card3{
+                      width:280px;
+                      height: 500;
+                      transform-style: preserve-3d;
+                      transition: all 1.0s linear;
+                    }
+                    .hiking:hover .card3 {
+                      transform: rotateY(180deg);
+                      box-shadow: -10px 10px 10px #aaa;
+                    }
+                    .hike_face {
+                      position: absolute;
+                      width: 280px;
+                      height: 500px;
+                      backface-visibility: hidden;
+                    }
+                    .back_hike_center{
+                      display: block;
+                      transform: rotateY(180deg);
+                      box-sizing: border-box;
+                      height: 500px;
+                      padding: 10px;
+                      color:white;
+                      text-align: center;
+                      background-color: #aaa;
+                    }
+                        .climbing {
+                        display: grid;
+                        grid-column-start: 4;
+                        grid-column-end: 4;
+                          margin-left: 10px;
+                          margin-top:  150px;
+                          width: 250px;
+                          height: 500px;
+                          z-index: 1;
+                          perspective: 1000;
+                        }
+                        .card4{
+                          width:280px;
+                          height: 500;
+                          transform-style: preserve-3d;
+                          transition: all 1.0s linear;
+                        }
+                        .climbing:hover .card4 {
+                          transform: rotateY(180deg);
+                          box-shadow: -10px 10px 10px #aaa;
+                        }
+                        .rock_face {
+                          position: absolute;
+                          width: 280px;
+                          height: 500px;
+                          backface-visibility: hidden;
+                        }
+                        .back_rock_center{
+                          display: block;
+                          transform: rotateY(180deg);
+                          box-sizing: border-box;
+                          height: 500px;
+                          padding: 10px;
+                          color:white;
+                          text-align: center;
+                          background-color: #aaa;
+                        }
+.footer{
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 20px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background-color: red;
+
+}
+          }
